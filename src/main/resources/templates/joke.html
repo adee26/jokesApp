@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Good old Chuck Norris Jokes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <style>
+        body{
+            background: rgb(1,0,9);
+            background: linear-gradient(62deg, rgba(1,0,9,0.969625350140056) 16%, rgba(198,53,44,1) 32%, rgba(255,255,255,1) 61%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<br>
+<body>
+    <div class = "text-center">
+        <h1>Good old Chuck Norris Jokes!</h1>
+    </div>
+
+    </br> </br> </br>
+
+    <div class = "text-center">
+    <p th:text="${joke}" id = "joke">Insert joke here!</p>
+    </div>
+
+    <div class = "text-center">
+        <button type = "button" class = "btn btn-primary" onclick="document.location.reload(true)" id="btn">Generate another joke</button>
+    </div>
+
+
+</body>
+</html>
